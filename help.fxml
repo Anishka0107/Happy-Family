@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="family.UserController">
+   <children>
+      <Pane prefHeight="771.0" prefWidth="308.0" style="-fx-background-color: #ffa500;" stylesheets="@css/welcome.css">
+         <children>
+            <Label id="signin" layoutX="61.0" layoutY="33.0" style="-fx-font-size: 30px;" stylesheets="@css/welcome.css" text="DASHBOARD" textAlignment="CENTER" textFill="WHITE" />
+            <Pane fx:id="profilelink" layoutY="93.0" onMouseClicked="#clickprofile" onMouseExited="#backToPos" prefHeight="89.0" prefWidth="308.0">
+               <children>
+                  <ImageView fx:id="iv1" fitHeight="80.0" fitWidth="80.0" layoutX="114.0" layoutY="5.0" onMouseEntered="#shiftLeft" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/single.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="signin" fx:id="tbmine" layoutX="148.0" layoutY="33.0" style="-fx-font-size: 20px;" stylesheets="@css/welcome.css" text="My Profile" textFill="WHITE" visible="false" />
+               </children>
+            </Pane>
+            <Pane layoutY="182.0" prefHeight="134.0" prefWidth="308.0">
+               <children>
+                  <Pane fx:id="bodylink" layoutY="27.0" onMouseClicked="#clickbody" onMouseExited="#backToPos1" prefHeight="80.0" prefWidth="89.0">
+                     <children>
+                        <ImageView fx:id="ivbody" fitHeight="80.0" fitWidth="80.0" layoutX="10.0" onMouseEntered="#shiftUp1" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/body.png" />
+                           </image>
+                        </ImageView>
+                        <Label id="signin" fx:id="tbbody" layoutX="10.0" layoutY="61.0" style="-fx-font-size: 14px;" stylesheets="@css/welcome.css" text="Body Health" textFill="WHITE" visible="false" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="eyelink" layoutX="98.0" layoutY="27.0" onMouseClicked="#clickeye" onMouseExited="#backToPos2" prefHeight="80.0" prefWidth="106.0">
+                     <children>
+                        <ImageView fx:id="iveye" fitHeight="60.0" fitWidth="60.0" layoutX="20.0" layoutY="10.0" onMouseEntered="#shiftUp2" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/eye%20.png" />
+                           </image>
+                        </ImageView>
+                        <Label id="signin" fx:id="tbeye" layoutX="15.0" layoutY="61.0" style="-fx-font-size: 14px;" stylesheets="@css/welcome.css" text="Eye Health" textFill="WHITE" visible="false" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="mouthlink" layoutX="198.0" layoutY="27.0" onMouseClicked="#clickmouth" onMouseExited="#backToPos3" prefHeight="80.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="ivmouth" fitHeight="70.0" fitWidth="70.0" layoutX="15.0" layoutY="5.0" onMouseEntered="#shiftUp3" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/mouth.png" />
+                           </image>
+                        </ImageView>
+                        <Label id="signin" fx:id="tbmouth" layoutX="9.0" layoutY="61.0" style="-fx-font-size: 14px;" stylesheets="@css/welcome.css" text="Mouh Health" textFill="WHITE" visible="false" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="otherlink" layoutX="1.0" layoutY="494.0" onMouseClicked="#clickother" onMouseExited="#backToPosa" prefHeight="89.0" prefWidth="308.0">
+               <children>
+                  <ImageView fx:id="ivmany" fitHeight="70.0" fitWidth="70.0" layoutX="119.0" layoutY="10.0" onMouseEntered="#shiftLefta" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/many.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="signin" fx:id="tbmany" layoutX="148.0" layoutY="33.0" style="-fx-font-size: 20px;" stylesheets="@css/welcome.css" text="Other Profiles" textFill="WHITE" visible="false" />
+               </children>
+            </Pane>
+            <Pane fx:id="repolink" layoutY="405.0" onMouseClicked="#clickrepo" onMouseDragExited="#backToPosc" onMouseExited="#backToPosc" prefHeight="89.0" prefWidth="308.0">
+               <children>
+                  <ImageView fx:id="ivold" fitHeight="65.0" fitWidth="65.0" layoutX="122.0" layoutY="13.0" onMouseEntered="#shiftLeftc" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/report.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="signin" fx:id="tbold" layoutX="145.0" layoutY="33.0" style="-fx-font-size: 20px;" stylesheets="@css/welcome.css" text="Old Reports" textFill="WHITE" visible="false" />
+               </children>
+            </Pane>
+            <Pane fx:id="helplink" layoutX="1.0" layoutY="583.0" onMouseClicked="#clickhelp" onMouseDragExited="#backToPosx" onMouseExited="#backToPosx" prefHeight="100.0" prefWidth="155.0">
+               <children>
+                  <ImageView fx:id="ivhelp" fitHeight="65.0" fitWidth="65.0" layoutX="45.0" layoutY="18.0" onMouseEntered="#shiftUpx" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/help.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="signin" fx:id="tbhelp" layoutX="59.0" layoutY="66.0" style="-fx-font-size: 17px;" stylesheets="@css/welcome.css" text="Help" textFill="WHITE" visible="false" />
+               </children>
+            </Pane>
+            <Pane fx:id="logoutlink" layoutX="154.0" layoutY="583.0" onMouseClicked="#clicklogout" onMouseExited="#backToPosy" prefHeight="100.0" prefWidth="155.0">
+               <children>
+                  <ImageView fx:id="ivlogout" fitHeight="60.0" fitWidth="60.0" layoutX="38.0" layoutY="20.0" onMouseEntered="#shiftUpy" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/logout.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="signin" fx:id="tblogout" layoutX="46.0" layoutY="66.0" style="-fx-font-size: 17px;" stylesheets="@css/welcome.css" text="Log Out" textFill="WHITE" visible="false" />
+               </children>
+            </Pane>
+            <Pane fx:id="misclink" layoutX="1.0" layoutY="305.0" onMouseClicked="#clickmisc" onMouseExited="#backToPosb" prefHeight="89.0" prefWidth="308.0">
+               <children>
+                  <ImageView fx:id="ivmisc" fitHeight="80.0" fitWidth="80.0" layoutX="114.0" layoutY="5.0" onMouseEntered="#shiftLeftb" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/misc.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="signin" fx:id="tbmisc" layoutX="145.0" layoutY="33.0" style="-fx-font-size: 20px;" stylesheets="@css/welcome.css" text="Miscellaneous" textFill="WHITE" visible="false" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

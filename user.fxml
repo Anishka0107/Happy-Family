@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="userpane" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="305.0" prefHeight="515.0" prefWidth="1084.0" style="-fx-background-color: #ffffff;" stylesheets="@css/welcome.css">
+         <children>
+            <ImageView id="profilepic" fitHeight="200.0" fitWidth="200.0" layoutX="721.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true" />
+            <Label id="signin" fx:id="_name" layoutX="730.0" layoutY="338.0" style="-fx-font-size: 27px;" stylesheets="@css/welcome.css" text="Name">
+               <tooltip>
+                  <Tooltip id="signin" opacity="0.8" text="Click to change Name" />
+               </tooltip></Label>
+            <Label id="signin" fx:id="_quote" layoutX="760.0" layoutY="397.0" style="-fx-font-size: 15px; -fx-font-style: italic;" stylesheets="@css/welcome.css" text="Health is Wealth" textFill="#29cebd">
+               <tooltip>
+                  <Tooltip id="signin" opacity="0.8" text="Click to change quote" />
+               </tooltip></Label>
+            <Label id="signin" layoutX="100.0" layoutY="100.0" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="Born on" textFill="#29cebd" />
+            <DatePicker id="signin" fx:id="dp" layoutX="292.0" layoutY="97.0" stylesheets="@css/welcome.css" visible="false" />
+            <Label id="signin" fx:id="_dob" layoutX="292.0" layoutY="100.0" onMouseClicked="#changeDetsdobage" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="dd/mm/yyyy" textFill="#666666">
+               <tooltip>
+                  <Tooltip id="signin" opacity="0.8" text="Click to change D.O.B." />
+               </tooltip></Label>
+            <Label id="signin" layoutX="100.0" layoutY="150.0" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="Age" textFill="#29cebd" />
+            <Label id="signin" fx:id="_age" layoutX="292.0" layoutY="150.0" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="0 years" textFill="#666666" />
+            <Label id="signin" layoutX="100.0" layoutY="200.0" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="Gender" textFill="#29cebd" />
+            <Label id="signin" layoutX="100.0" layoutY="250.0" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="Weight" textFill="#29cebd" />
+            <Label id="signin" layoutX="100.0" layoutY="300.0" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="Height" textFill="#29cebd" />
+            <Label id="signin" layoutX="100.0" layoutY="350.0" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="BMI" textFill="#29cebd" />
+            <Label id="signin" layoutX="100.0" layoutY="400.0" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="Blood Group" textFill="#29cebd" />
+            <Label id="signin" layoutX="100.0" layoutY="450.0" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="Haemoglobin" textFill="#29cebd" />
+            <Label id="signin" fx:id="_gender" layoutX="292.0" layoutY="200.0" onMouseClicked="#changeDetsgend" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="Male" textFill="#666666">
+               <tooltip>
+                  <Tooltip id="signin" opacity="0.8" text="Click to change Gender" />
+               </tooltip></Label>
+            <Label id="signin" layoutX="292.0" layoutY="250.0" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="0 kg" textFill="#666666" />
+            <Label id="signin" layoutX="292.0" layoutY="300.0" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="0 cm" textFill="#666666" />
+            <Label id="signin" layoutX="292.0" layoutY="350.0" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="Undefined" textFill="#666666" />
+            <Label id="signin" layoutX="292.0" layoutY="400.0" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="A+" textFill="#666666" />
+            <Label id="signin" layoutX="292.0" layoutY="450.0" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="0" textFill="#666666" />
+            <Group fx:id="g" layoutX="292.0" layoutY="200.0" visible="false">
+               <children>
+                  <RadioButton id="signin" fx:id="ro" layoutX="220.0" mnemonicParsing="false" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="Other" textFill="#666666">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="group" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton id="signin" fx:id="rf" mnemonicParsing="false" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="Female" textFill="#666666" toggleGroup="$group" />
+                  <RadioButton id="signin" fx:id="rm" layoutX="110.0" mnemonicParsing="false" style="-fx-font-size: 16px;" stylesheets="@css/welcome.css" text="Male" textFill="#666666" toggleGroup="$group" />
+               </children>
+            </Group>
+            <Button id="signin" fx:id="bi1" layoutX="476.0" layoutY="97.0" mnemonicParsing="false" onMouseClicked="#changeDetsdobage" stylesheets="@css/welcome.css" text="OK" visible="false" />
+            <Button id="signin" fx:id="bi2" layoutX="615.0" layoutY="199.0" mnemonicParsing="false" onMouseClicked="#changeDetsgend" stylesheets="@css/welcome.css" text="OK" visible="false" />
+            <TextField id="signin" layoutX="730.0" layoutY="335.0" prefHeight="30.0" prefWidth="245.0" style="-fx-font-size: 18px;" stylesheets="@css/welcome.css" visible="false" />
+            <Button id="signin" fx:id="bi3" layoutX="998.0" layoutY="340.0" mnemonicParsing="false" stylesheets="@css/welcome.css" text="OK" visible="false" />
+            <TextArea id="signin" layoutX="747.0" layoutY="388.0" prefHeight="114.0" prefWidth="275.0" stylesheets="@css/welcome.css" visible="false" />
+            <Button id="signin" layoutX="1032.0" layoutY="479.0" mnemonicParsing="false" stylesheets="@css/welcome.css" text="OK" visible="false" />
+         </children></Pane>
+      <Pane prefHeight="771.0" prefWidth="308.0" style="-fx-background-color: #29cebd;" stylesheets="@css/welcome.css">
+         <children>
+            <Label id="signin" layoutX="61.0" layoutY="33.0" style="-fx-font-size: 30px;" stylesheets="@css/welcome.css" text="DASHBOARD" textAlignment="CENTER" textFill="WHITE" />
+            <Pane fx:id="profilelink" layoutY="93.0" onMouseClicked="#clickprofile" onMouseExited="#backToPos" prefHeight="89.0" prefWidth="308.0">
+               <children>
+                  <ImageView fx:id="iv1" fitHeight="80.0" fitWidth="80.0" layoutX="114.0" layoutY="5.0" onMouseEntered="#shiftLeft" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/single.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="signin" fx:id="tbmine" layoutX="148.0" layoutY="33.0" style="-fx-font-size: 20px;" stylesheets="@css/welcome.css" text="My Profile" textFill="WHITE" visible="false" />
+               </children>
+            </Pane>
+            <Pane layoutY="182.0" prefHeight="134.0" prefWidth="308.0">
+               <children>
+                  <Pane fx:id="bodylink" layoutY="27.0" onMouseClicked="#clickbody" onMouseExited="#backToPos1" prefHeight="80.0" prefWidth="89.0">
+                     <children>
+                        <ImageView fx:id="ivbody" fitHeight="80.0" fitWidth="80.0" layoutX="10.0" onMouseEntered="#shiftUp1" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/body.png" />
+                           </image>
+                        </ImageView>
+                        <Label id="signin" fx:id="tbbody" layoutX="10.0" layoutY="61.0" style="-fx-font-size: 14px;" stylesheets="@css/welcome.css" text="Body Health" textFill="WHITE" visible="false" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="eyelink" layoutX="98.0" layoutY="27.0" onMouseClicked="#clickeye" onMouseExited="#backToPos2" prefHeight="80.0" prefWidth="106.0">
+                     <children>
+                        <ImageView fx:id="iveye" fitHeight="60.0" fitWidth="60.0" layoutX="20.0" layoutY="10.0" onMouseEntered="#shiftUp2" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/eye%20.png" />
+                           </image>
+                        </ImageView>
+                        <Label id="signin" fx:id="tbeye" layoutX="15.0" layoutY="61.0" style="-fx-font-size: 14px;" stylesheets="@css/welcome.css" text="Eye Health" textFill="WHITE" visible="false" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="mouthlink" layoutX="198.0" layoutY="27.0" onMouseClicked="#clickmouth" onMouseExited="#backToPos3" prefHeight="80.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="ivmouth" fitHeight="70.0" fitWidth="70.0" layoutX="15.0" layoutY="5.0" onMouseEntered="#shiftUp3" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/mouth.png" />
+                           </image>
+                        </ImageView>
+                        <Label id="signin" fx:id="tbmouth" layoutX="9.0" layoutY="61.0" style="-fx-font-size: 14px;" stylesheets="@css/welcome.css" text="Mouh Health" textFill="WHITE" visible="false" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="otherlink" layoutX="1.0" layoutY="494.0" onMouseClicked="#clickother" onMouseExited="#backToPosa" prefHeight="89.0" prefWidth="308.0">
+               <children>
+                  <ImageView fx:id="ivmany" fitHeight="70.0" fitWidth="70.0" layoutX="119.0" layoutY="10.0" onMouseEntered="#shiftLefta" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/many.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="signin" fx:id="tbmany" layoutX="148.0" layoutY="33.0" style="-fx-font-size: 20px;" stylesheets="@css/welcome.css" text="Other Profiles" textFill="WHITE" visible="false" />
+               </children>
+            </Pane>
+            <Pane fx:id="repolink" layoutY="405.0" onMouseClicked="#clickrepo" onMouseDragExited="#backToPosc" onMouseExited="#backToPosc" prefHeight="89.0" prefWidth="308.0">
+               <children>
+                  <ImageView fx:id="ivold" fitHeight="65.0" fitWidth="65.0" layoutX="122.0" layoutY="13.0" onMouseEntered="#shiftLeftc" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/report.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="signin" fx:id="tbold" layoutX="145.0" layoutY="33.0" style="-fx-font-size: 20px;" stylesheets="@css/welcome.css" text="Old Reports" textFill="WHITE" visible="false" />
+               </children>
+            </Pane>
+            <Pane fx:id="helplink" layoutX="1.0" layoutY="583.0" onMouseClicked="#clickhelp" onMouseDragExited="#backToPosx" onMouseExited="#backToPosx" prefHeight="100.0" prefWidth="155.0">
+               <children>
+                  <ImageView fx:id="ivhelp" fitHeight="65.0" fitWidth="65.0" layoutX="45.0" layoutY="18.0" onMouseEntered="#shiftUpx" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/help.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="signin" fx:id="tbhelp" layoutX="59.0" layoutY="66.0" style="-fx-font-size: 17px;" stylesheets="@css/welcome.css" text="Help" textFill="WHITE" visible="false" />
+               </children>
+            </Pane>
+            <Pane fx:id="logoutlink" layoutX="154.0" layoutY="583.0" onMouseClicked="#clicklogout" onMouseExited="#backToPosy" prefHeight="100.0" prefWidth="155.0">
+               <children>
+                  <ImageView fx:id="ivlogout" fitHeight="60.0" fitWidth="60.0" layoutX="38.0" layoutY="20.0" onMouseEntered="#shiftUpy" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/logout.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="signin" fx:id="tblogout" layoutX="46.0" layoutY="66.0" style="-fx-font-size: 17px;" stylesheets="@css/welcome.css" text="Log Out" textFill="WHITE" visible="false" />
+               </children>
+            </Pane>
+            <Pane fx:id="misclink" layoutX="1.0" layoutY="305.0" onMouseClicked="#clickmisc" onMouseExited="#backToPosb" prefHeight="89.0" prefWidth="308.0">
+               <children>
+                  <ImageView fx:id="ivmisc" fitHeight="80.0" fitWidth="80.0" layoutX="114.0" layoutY="5.0" onMouseEntered="#shiftLeftb" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/misc.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="signin" fx:id="tbmisc" layoutX="145.0" layoutY="33.0" style="-fx-font-size: 20px;" stylesheets="@css/welcome.css" text="Miscellaneous" textFill="WHITE" visible="false" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="308.0" layoutY="515.0" prefHeight="254.0" prefWidth="1084.0" style="-fx-background-color: #bbbbbb;">
+         <children>
+            <VBox prefHeight="254.0" prefWidth="400.0">
+               <children>
+                  <Label id="signin" style="-fx-label-padding: 20px; -fx-font-size: 16px;" stylesheets="@css/welcome.css" text="Allergies" textFill="#111111" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+            <VBox layoutX="400.0" prefHeight="254.0" prefWidth="400.0">
+               <children>
+                  <Label id="signin" style="-fx-font-size: 16px; -fx-label-padding: 20px;" stylesheets="@css/welcome.css" text="Reactions" textFill="#111111" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+            <VBox layoutX="800.0" prefHeight="254.0" prefWidth="285.0">
+               <children>
+                  <Label id="signin" style="-fx-label-padding: 20px; -fx-font-size: 16px;" stylesheets="@css/welcome.css" text="Deficiencies" textFill="#111111" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
