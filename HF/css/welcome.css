@@ -1,0 +1,51 @@
+@font-face{
+    src: url("fonts/QuicksandBold-Regular.otf");
+}
+@font-face{
+    src: url("fonts/aimh.ttf");
+}
+@font-face{
+    src: url("fonts/Young.ttf");
+}
+#cont{
+    -fx-font-family: "QuicksandBold-Regular";
+    -fx-background-color: linear-gradient( #ff9ab6, #ff6e95);
+}
+#cont:hover{
+    -fx-background-color: linear-gradient( #ff6d94, #ff4c74);
+}
+#lb{
+    -fx-font-family: "Always in My Heart";
+}
+#img:hover{
+    -fx-translate-x:7px;
+}
+#hf:hover{
+    -fx-scale-x:1.05;
+    -fx-scale-y:1.05;
+}
+#leftside{
+    -fx-background-image: url(../Images/food.png);
+}
+#rightside{
+    -fx-background-image: url(../Images/giftly.png);
+}
+#signin,#signup{
+    -fx-font-family: "Young";
+}
+#tb{
+    -fx-outline: none;
+    -fx-font-family: "Young";
+}
+#b0{
+    -fx-background-color: linear-gradient(#ee9a49,#cd853f);
+        -fx-font-family: "Young";
+}
+#b1{
+    -fx-background-color:linear-gradient(#a19292,#a6a3a3);
+        -fx-font-family: "Young";
+}
+#b0:hover,#b1:hover{
+    -fx-scale-x:1.02;
+    -fx-scale-y:1.02;
+}
